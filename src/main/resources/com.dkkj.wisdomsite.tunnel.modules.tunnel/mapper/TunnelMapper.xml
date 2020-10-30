@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dkkj.wisdomsite.tunnel.modules.tunnel.mapper.TunnelMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.dkkj.wisdomsite.tunnel.modules.tunnel.domain.Tunnel">
+                    <id column="id" property="id"/>
+                    <result column="section_code" property="sectionCode"/>
+                    <result column="tunnel_name" property="tunnelName"/>
+                    <result column="tunnel_code" property="tunnelCode"/>
+                    <result column="risk_grade" property="riskGrade"/>
+                    <result column="tunnel_type" property="tunnelType"/>
+                    <result column="left_start_mileage" property="leftStartMileage"/>
+                    <result column="left_ent_mileage" property="leftEntMileage"/>
+                    <result column="right_start_mileage" property="rightStartMileage"/>
+                    <result column="right_end_mileage" property="rightEndMileage"/>
+                    <result column="excavate_type" property="excavateType"/>
+                    <result column="plan_date" property="planDate"/>
+                    <result column="manager" property="manager"/>
+                    <result column="manager_phone" property="managerPhone"/>
+                    <result column="tunnel_pic" property="tunnelPic"/>
+                    <result column="remarks" property="remarks"/>
+                    <result column="create_time" property="createTime"/>
+                    <result column="update_time" property="updateTime"/>
+                    <result column="del_flag" property="delFlag"/>
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, section_code, tunnel_name, tunnel_code, risk_grade, tunnel_type, left_start_mileage, left_ent_mileage, right_start_mileage, right_end_mileage, excavate_type, plan_date, manager, manager_phone, tunnel_pic, remarks, create_time, update_time, del_flag
+        </sql>
+
+</mapper>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dkkj.wisdomsite.tunnel.modules.tunnel.mapper.MachineMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.dkkj.wisdomsite.tunnel.modules.tunnel.domain.Machine">
+                    <id column="id" property="id"/>
+                    <result column="code" property="code"/>
+                    <result column="machine_name" property="machineName"/>
+                    <result column="type" property="type"/>
+                    <result column="model" property="model"/>
+                    <result column="operator" property="operator"/>
+                    <result column="charge_person" property="chargePerson"/>
+                    <result column="affiliated_org" property="affiliatedOrg"/>
+                    <result column="enter_date" property="enterDate"/>
+                    <result column="exit_date" property="exitDate"/>
+                    <result column="binding_card_num" property="bindingCardNum"/>
+                    <result column="machine_pic" property="machinePic"/>
+                    <result column="operation_cert" property="operationCert"/>
+                    <result column="qr_code" property="qrCode"/>
+                    <result column="status" property="status"/>
+                    <result column="create_time" property="createTime"/>
+                    <result column="update_time" property="updateTime"/>
+                    <result column="del_flag" property="delFlag"/>
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, code, machine_name, type, model, operator, charge_person, affiliated_org, enter_date, exit_date, binding_card_num, machine_pic, operation_cert, qr_code, status, create_time, update_time, del_flag
+        </sql>
+
+</mapper>

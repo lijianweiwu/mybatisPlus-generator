@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dkkj.wisdomsite.tunnel.modules.tunnel.mapper.StaffInfoMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.dkkj.wisdomsite.tunnel.modules.tunnel.domain.StaffInfo">
+                    <id column="id" property="id"/>
+                    <result column="code" property="code"/>
+                    <result column="staff_name" property="staffName"/>
+                    <result column="gender" property="gender"/>
+                    <result column="age" property="age"/>
+                    <result column="department" property="department"/>
+                    <result column="profession" property="profession"/>
+                    <result column="affiliated_org" property="affiliatedOrg"/>
+                    <result column="enter_date" property="enterDate"/>
+                    <result column="exit_date" property="exitDate"/>
+                    <result column="binding_card_num" property="bindingCardNum"/>
+                    <result column="face_pic" property="facePic"/>
+                    <result column="cert_pic_one" property="certPicOne"/>
+                    <result column="cert_pic_two" property="certPicTwo"/>
+                    <result column="qr_code" property="qrCode"/>
+                    <result column="create_time" property="createTime"/>
+                    <result column="update_time" property="updateTime"/>
+                    <result column="del_flag" property="delFlag"/>
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, code, staff_name, gender, age, department, profession, affiliated_org, enter_date, exit_date, binding_card_num, face_pic, cert_pic_one, cert_pic_two, qr_code, create_time, update_time, del_flag
+        </sql>
+
+</mapper>

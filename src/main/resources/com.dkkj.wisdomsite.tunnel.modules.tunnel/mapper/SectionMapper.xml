@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dkkj.wisdomsite.tunnel.modules.tunnel.mapper.SectionMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.dkkj.wisdomsite.tunnel.modules.tunnel.domain.Section">
+                    <id column="id" property="id"/>
+                    <result column="project_code" property="projectCode"/>
+                    <result column="section_name" property="sectionName"/>
+                    <result column="section_short_name" property="sectionShortName"/>
+                    <result column="section_type" property="sectionType"/>
+                    <result column="section_code" property="sectionCode"/>
+                    <result column="start_mileage" property="startMileage"/>
+                    <result column="end_mileage" property="endMileage"/>
+                    <result column="section_length" property="sectionLength"/>
+                    <result column="start_date" property="startDate"/>
+                    <result column="end_date" property="endDate"/>
+                    <result column="build_org" property="buildOrg"/>
+                    <result column="manager" property="manager"/>
+                    <result column="manager_phone" property="managerPhone"/>
+                    <result column="section_addr" property="sectionAddr"/>
+                    <result column="remarks" property="remarks"/>
+                    <result column="create_time" property="createTime"/>
+                    <result column="update_time" property="updateTime"/>
+                    <result column="del_flag" property="delFlag"/>
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, project_code, section_name, section_short_name, section_type, section_code, start_mileage, end_mileage, section_length, start_date, end_date, build_org, manager, manager_phone, section_addr, remarks, create_time, update_time, del_flag
+        </sql>
+
+</mapper>
